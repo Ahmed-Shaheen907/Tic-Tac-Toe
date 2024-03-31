@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    
+    font-family: btn;
+    src: url(btn.otf);
+}
+
+@font-face {
+    font-family: TicTacToe;
+    src: url(Tic.otf);
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main {
+    background-color:   #443737;
+    height: 100vh; /* Subtract border width (2px on each side) */
+    width: 100vw; /* Subtract border width (2px on each side) */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.box{
+    background-color: #272121;
+    border-color:bisque ;
+    border-style: solid;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    line-height: 150px; /*to center height wise just put the height of the div*/
+    color: #FEC7B4;
+    font-family: TicTacToe;
+    font-size: 40px;
+}
+
+h1{
+    font-family: TicTacToe, sans-serif;
+    color: #FEC7B4;
+    font-size: 60px;;
+}
+
+h2{
+    font-family: TicTacToe, sans-serif;
+    color: #FEC7B4;
+    font-size: 40px;
+}
+
+button{
+    font-family: btn, sans-serif;
+    font-size: 20px;
+    background-color: #FEC7B4;
+    border-style:none;
+    border-radius: 15px;
+}
+
+#zero, #one, #two{
+    border-top: none;
+}
+
+#zero, #three, #six{
+    border-left: none;
+}
+
+#two, #five, #eight{
+    border-right: none;
+}
+
+#six, #seven, #eight{
+    border-bottom: none;
+}
+
